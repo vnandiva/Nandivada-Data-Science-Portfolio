@@ -1,16 +1,5 @@
 # Nandivada-Data Science Portfolio
 
-## About Me
-
-I am a junior at the University of Notre Dame pursuing Applied Mathematics with a passion for data science, analytics, and deriving actionable insights from complex datasets. With experience in business analytics and healthcare consulting through internships at UnitedHealthGroup and West Monroe, I am committed to developing robust data-driven solutions and communicating findings effectively to stakeholders.
-
-## Technical Skills
-
-- **Programming Languages:** Python, SQL, R
-- **Data Analysis & Visualization:** Pandas, NumPy, Matplotlib, Seaborn, Tableau, Power BI
-- **Machine Learning:** Scikit-learn, Random Forest, Statistical Modeling
-- **Tools & Platforms:** Git/GitHub, Jupyter Notebooks, Excel, Google Sheets
-- **Statistical Methods:** Exploratory Data Analysis (EDA), Regression Analysis, Classification, Predictive Modeling
 
 ## Portfolio Projects
 
