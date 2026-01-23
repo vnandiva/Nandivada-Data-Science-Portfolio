@@ -12,7 +12,7 @@ This repository showcases my data science projects, including:
 
 ## Repository Structure
 
-This portfolio is organized as follows:
+This portfolio will be organized as follows:
 
 ```
 .
@@ -25,7 +25,7 @@ This portfolio is organized as follows:
 
 ## Getting Started
 
-Each project folder contains:
+Each project folder will contain:
 - Jupyter notebooks with detailed analysis and code
 - Relevant datasets (or links to data sources)
 - README files explaining the project objectives and key findings
