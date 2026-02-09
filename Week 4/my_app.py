@@ -1,3 +1,4 @@
+from pathlib import Path
 import streamlit as st
 import pandas as pd
 import os
@@ -14,7 +15,8 @@ st.write(f"You picked: {color}")
 
 # Load data from CSV
 st.subheader("Data Explorer")
-df = pd.read_csv("data/sample_data.csv")
+DATA_PATH = Path(__file__).parent / "Week 4" / "data" / "sample_data.csv"
+df = pd.read_csv(DATA_PATH)
 # Show full dataset
 st.write("Full dataset:")
 st.dataframe(df)
