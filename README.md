@@ -8,7 +8,7 @@
 
 ## About Me
 
-I am a junior at the University of Notre Dame pursuing Applied Mathematics with a passion for data science, analytics, and deriving actionable insights from complex datasets. With experience in business analytics and healthcare consulting through internships at UnitedHealthGroup and West Monroe, I am committed to developing robust data-driven solutions and communicating findings effectively to stakeholders.
+I'm a junior at Notre Dame studying Applied Mathematics. I've been interning in business analytics and healthcare consulting (UnitedHealthGroup and West Monroe), and I'm using this portfolio to build out my data science skills alongside that work. I'm most interested in the parts of data science that actually produce something useful — clean pipelines, clear visualizations, tools people can actually use.
 
 ---
 
@@ -30,7 +30,7 @@ I am a junior at the University of Notre Dame pursuing Applied Mathematics with 
 
 **Folder:** [`basic_streamlit_app/`](./basic_streamlit_app/)
 
-**Overview:** An interactive web application built with Streamlit that allows users to upload any CSV dataset and explore it visually through dynamic filters, summary statistics, and customizable charts — all without writing a single line of code.
+**Overview:** A web app built with Streamlit where users can upload any CSV and immediately start exploring it — filters, summary stats, charts — without touching any code.
 
 **What it demonstrates:**
 - Building user-facing data tools with Python and Streamlit
@@ -46,19 +46,18 @@ I am a junior at the University of Notre Dame pursuing Applied Mathematics with 
 
 **Folder:** [`TidyData-Project/`](./TidyData-Project/)
 
-**Overview:** A Jupyter Notebook project that applies **tidy data principles** (Wickham, 2014) to clean, reshape, and analyze U.S. Federal R&D budget data spanning 1976–2017. The raw dataset is in messy wide format — column headers encode two variables at once (year + GDP). Using `pd.melt()`, `str.split()`, and `str.replace()`, the data is transformed into a fully tidy, analysis-ready format.
+**Overview:** A Jupyter Notebook project where I took a messy, wide-format dataset on U.S. Federal R&D spending (1976–2017) and transformed it into a clean, tidy structure using `pd.melt()`, `str.split()`, and `str.replace()`. After cleaning, I ran aggregations and built two visualizations to look at trends across agencies over time.
 
 **What it demonstrates:**
-- Identifying and correcting untidy data structures
-- Applying `melt()`, `str.split()`, and `str.replace()` to reshape messy data
-- Aggregating data with `groupby()` and `pivot_table()`
-- Creating two polished visualizations (line chart + horizontal bar chart) from the cleaned data
-- Thorough Markdown documentation explaining every step and design choice
+- Spotting and fixing untidy data structures
+- Using `melt()`, `str.split()`, and `str.replace()` to reshape messy data
+- Aggregating with `groupby()` and `pivot_table()`
+- Two visualizations (line chart + bar chart) built on the cleaned data
+- Markdown writeups explaining each step
 
 **Key skills:** Python, Pandas, Matplotlib, Seaborn, data wrangling, tidy data principles, EDA
 
-**How it complements the portfolio:**
-While Project 1 (Streamlit) focuses on the *presentation layer* — building tools that let users interact with data visually — Project 2 focuses on the *foundation* that makes any good analysis possible: clean, well-structured data. Tidy data principles are not just academic; they are the prerequisite for every meaningful chart, model, or insight. Together, these two projects demonstrate both the front-end (interactive apps) and back-end (data cleaning and transformation) dimensions of data science work, showing a complete picture of the data pipeline from raw messy input to polished visual output.
+**How it fits with the rest of the portfolio:** Project 1 is about the output — making data usable for people who aren't writing code. Project 2 is about the input — actually getting the raw data into a shape where it's worth doing anything with. They're two different ends of the same pipeline.
 
 ---
 
@@ -66,29 +65,30 @@ While Project 1 (Streamlit) focuses on the *presentation layer* — building too
 
 ```
 .
-├── TidyData-Project/        # Tidy data analysis of U.S. Federal R&D budgets (Portfolio Update 2)
-├── basic_streamlit_app/     # Interactive Streamlit data explorer (Portfolio Update 1)
-├── Week 2/                  # Weekly exercises
-├── Week 3/                  # Weekly exercises
-├── Week 4/                  # Weekly exercises
-└── README.md                # This file
+├── TidyData-Project/       # Tidy data analysis of U.S. Federal R&D budgets (Portfolio Update 2)
+├── basic_streamlit_app/    # Interactive Streamlit data explorer (Portfolio Update 1)
+├── Week 2/                 # Weekly exercises
+├── Week 3/                 # Weekly exercises
+├── Week 4/                 # Weekly exercises
+└── README.md               # This file
 ```
 
 ---
 
 ## Getting Started
 
-Each project folder contains:
-- A Jupyter notebook or Python script with full analysis and commented code
-- A `README.md` explaining the project goals, setup instructions, and key findings
-- Relevant datasets (or links to data sources)
+Each project folder has:
+- A Jupyter notebook or Python script with the full analysis
+- A `README.md` with setup instructions and project notes
+- The dataset (or a link to it)
 - Saved visualizations (`.png` files)
 
-To run any notebook locally:
+To run locally:
+
 ```bash
 git clone https://github.com/vnandiva/Nandivada-Data-Science-Portfolio.git
-cd Nandivada-Data-Science-Portfolio/<project-folder>
-pip install -r requirements.txt  # or see project README for dependencies
+cd Nandivada-Data-Science-Portfolio/
+pip install -r requirements.txt  # or see the project README for specific dependencies
 jupyter notebook
 ```
 
