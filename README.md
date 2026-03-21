@@ -20,7 +20,7 @@ I am a junior at the University of Notre Dame pursuing Applied Mathematics with 
 This repository showcases my data science projects, including:
 
 - **Exploratory Data Analysis (EDA):** Deep dives into datasets to uncover patterns, distributions, and relationships
-- **Visualizations:** Creating compelling and insightful data visualizations to communicate findings
+- **Streamlit Applications:** Applications built using the streamlit library
 - **Predictive Models:** Building and evaluating machine learning models for classification and regression tasks
 - **Case Studies:** End-to-end data science projects from problem definition to solution implementation
 
@@ -31,7 +31,7 @@ This portfolio will be organized as follows:
 ```
 .
 ├── eda/                      # Exploratory Data Analysis projects
-├── visualizations/          # Data visualization projects
+├── streamlit apps/          # Apps using streamlit
 ├── models/                  # Machine Learning models and predictive projects
 ├── case_studies/            # End-to-end project case studies
 └── README.md                # This file
@@ -43,6 +43,12 @@ Each project folder will contain:
 - Jupyter notebooks with detailed analysis and code
 - Relevant datasets (or links to data sources)
 - README files explaining the project objectives and key findings
+
+## Goals
+
+- Improve knowledge on unsupervised learning models 
+- Build applications using streamlit 
+- Explore new, more efficient pre-processing techniques 
 
 ## Contact
 

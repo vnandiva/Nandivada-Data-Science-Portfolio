@@ -7,7 +7,6 @@ This is an app that is used to explore Spotify tracks and filters them by genre,
 ## How to Run
 streamlit run basic_streamlit_app/main.py
 
-
 ## Contact
 
 - **GitHub:** [github.com/vnandiva](https://github.com/vnandiva)
