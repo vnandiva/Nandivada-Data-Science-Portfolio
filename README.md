@@ -22,13 +22,11 @@ I'm a junior at Notre Dame studying Applied Mathematics. I've been interning in 
 | **Tools & Platforms** | Git/GitHub, Jupyter Notebooks, Google Colab, Excel |
 | **Statistical Methods** | EDA, Regression Analysis, Classification, Predictive Modeling |
 
----
-
 ## Portfolio Projects
 
 ### Project 1: Streamlit Interactive Data Explorer
 
-**Folder:** [`basic_streamlit_app/`](./basic_streamlit_app/)
+**Folder:** [`basic_streamlit_app/`](https://github.com/vnandiva/Nandivada-Data-Science-Portfolio/blob/main/basic_streamlit_app)
 
 **Overview:** A web app built with Streamlit where users can upload any CSV and immediately start exploring it — filters, summary stats, charts — without touching any code.
 
@@ -40,11 +38,9 @@ I'm a junior at Notre Dame studying Applied Mathematics. I've been interning in 
 
 **Key skills:** Python, Streamlit, Pandas, Matplotlib, interactive UI design
 
----
-
 ### Project 2: Federal R&D Budget — Tidy Data Analysis
 
-**Folder:** [`TidyData-Project/`](./TidyData-Project/)
+**Folder:** [`TidyData-Project/`](https://github.com/vnandiva/Nandivada-Data-Science-Portfolio/blob/main/TidyData-Project)
 
 **Overview:** A Jupyter Notebook project where I took a messy, wide-format dataset on U.S. Federal R&D spending (1976–2017) and transformed it into a clean, tidy structure using `pd.melt()`, `str.split()`, and `str.replace()`. After cleaning, I ran aggregations and built two visualizations to look at trends across agencies over time.
 
@@ -59,21 +55,37 @@ I'm a junior at Notre Dame studying Applied Mathematics. I've been interning in 
 
 **How it fits with the rest of the portfolio:** Project 1 is about the output — making data usable for people who aren't writing code. Project 2 is about the input — actually getting the raw data into a shape where it's worth doing anything with. They're two different ends of the same pipeline.
 
----
+### Project 3: Interactive Machine Learning Explorer
+
+**Folder:** [`MLStreamlitApp/`](https://github.com/vnandiva/Nandivada-Data-Science-Portfolio/tree/main/MLStreamlitApp)
+
+**Live App:** [Launch on Streamlit Community Cloud](https://vnandiva-nandivada-data-science-por-mlstreamlitappapp-PLACEHOLDER.streamlit.app)
+
+**Overview:** A fully interactive Streamlit app for supervised machine learning. Users can upload their own CSV dataset or choose from three built-in datasets (Iris, Wine, Breast Cancer), select from four classification models, tune hyperparameters via sliders, and immediately see the impact on model performance — including accuracy metrics, confusion matrix, ROC curve, and feature importances.
+
+**What it demonstrates:**
+- End-to-end ML pipeline in Python: data loading, preprocessing, model training, and evaluation
+- Four supervised models: K-Nearest Neighbors, Decision Tree, Logistic Regression, Random Forest
+- Hyperparameter tuning with real-time feedback — including sweep charts showing accuracy across the full k or depth range
+- Robust performance evaluation: accuracy, precision, recall, F1, confusion matrix, ROC/AUC
+- Deployment to Streamlit Community Cloud with a public shareable URL
+
+**Key skills:** Python, Streamlit, scikit-learn, Pandas, Matplotlib, Seaborn, model deployment
+
+**How it fits with the overall portfolio:** Projects 1 and 2 built the foundation — interactive data tools and clean data pipelines. Project 3 is where those come together with machine learning. It applies the interactive Python development from Project 1 to an ML context, building something that makes model experimentation genuinely accessible. Together, the three projects show I can take data from raw input to clean format to trained, evaluated, and deployed models.
 
 ## Repository Structure
 
 ```
 .
-├── TidyData-Project/       # Tidy data analysis of U.S. Federal R&D budgets (Portfolio Update 2)
-├── basic_streamlit_app/    # Interactive Streamlit data explorer (Portfolio Update 1)
-├── Week 2/                 # Weekly exercises
-├── Week 3/                 # Weekly exercises
-├── Week 4/                 # Weekly exercises
-└── README.md               # This file
+├── MLStreamlitApp/        # Interactive ML Explorer — Streamlit app with 4 classifiers (Portfolio Update 3)
+├── TidyData-Project/      # Tidy data analysis of U.S. Federal R&D budgets (Portfolio Update 2)
+├── basic_streamlit_app/   # Interactive Streamlit data explorer (Portfolio Update 1)
+├── Week 2/                # Weekly exercises
+├── Week 3/                # Weekly exercises
+├── Week 4/                # Weekly exercises
+└── README.md              # This file
 ```
-
----
 
 ## Getting Started
 
@@ -92,11 +104,9 @@ pip install -r requirements.txt  # or see the project README for specific depend
 jupyter notebook
 ```
 
----
-
 ## Contact
 
 - **GitHub:** [github.com/vnandiva](https://github.com/vnandiva)
 - **Email:** [vnandiva@nd.edu](mailto:vnandiva@nd.edu)
 
-*Last updated: March 2026*
+Last updated: April 2026
