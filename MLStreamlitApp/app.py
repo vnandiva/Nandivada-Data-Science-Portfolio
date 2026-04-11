@@ -13,15 +13,14 @@ from sklearn.metrics import (
 )
 import matplotlib.pyplot as plt
 import seaborn as sns
-import io
 
-st.set_page_config(page_title="ML Explorer", layout="wide")
+st.set_page_config(page_title="ML Explorer", page_icon="🤖", layout="wide")
 
-st.title("Interactive Machine Learning Explorer")
-st.markdown("""
-Upload a CSV dataset (or use the built-in sample), select a supervised ML model,
-tune hyperparameters, and explore model performance — all without writing a single line of code.
-""")
+st.title("🤖 Interactive Machine Learning Explorer")
+st.write(
+    "Upload a CSV dataset (or use the built-in sample), select a supervised ML model, "
+    "tune hyperparameters, and explore model performance — all without writing a single line of code."
+)
 
 # --- Sample datasets ---
 @st.cache_data
@@ -48,9 +47,14 @@ def load_sample_breast_cancer():
     df["target"] = data.target
     return df
 
+st.divider()
+
 # --- Sidebar: Data ---
 st.sidebar.header("1. Data")
-data_source = st.sidebar.radio("Data source", ["Sample: Iris", "Sample: Wine", "Sample: Breast Cancer", "Upload CSV"])
+data_source = st.sidebar.radio(
+    "Data source",
+    ["Sample: Iris", "Sample: Wine", "Sample: Breast Cancer", "Upload CSV"]
+)
 
 df = None
 if data_source == "Upload CSV":
@@ -69,8 +73,10 @@ if df is None:
     st.stop()
 
 st.subheader("Dataset Preview")
-st.dataframe(df.head(10), use_container_width=True)
-st.write(f"Shape: **{df.shape[0]} rows x {df.shape[1]} columns**")
+st.caption(f"Loaded **{len(df):,}** rows x **{df.shape[1]}** columns.")
+st.dataframe(df.head(10), use_container_width=True, height=260)
+
+st.divider()
 
 # --- Sidebar: Feature / Target Selection ---
 st.sidebar.header("2. Features & Target")
@@ -115,7 +121,11 @@ elif model_name == "Decision Tree":
     min_samples_split = st.sidebar.slider("Min samples split", 2, 20, 2)
     model = DecisionTreeClassifier(max_depth=max_depth, min_samples_split=min_samples_split, random_state=42)
 elif model_name == "Logistic Regression":
-    C = st.sidebar.select_slider("Regularization strength (C)", options=[0.01, 0.1, 0.5, 1.0, 5.0, 10.0], value=1.0)
+    C = st.sidebar.select_slider(
+        "Regularization strength (C)",
+        options=[0.01, 0.1, 0.5, 1.0, 5.0, 10.0],
+        value=1.0
+    )
     max_iter = st.sidebar.slider("Max iterations", 100, 2000, 500)
     model = LogisticRegression(C=C, max_iter=max_iter, random_state=42)
 else:
@@ -149,9 +159,20 @@ st.subheader(f"Model: {model_name} — Results")
 
 col1, col2, col3, col4 = st.columns(4)
 col1.metric("Accuracy", f"{accuracy_score(y_test, y_pred):.3f}")
-col2.metric("Precision (macro)", f"{precision_score(y_test, y_pred, average='macro', zero_division=0):.3f}")
-col3.metric("Recall (macro)", f"{recall_score(y_test, y_pred, average='macro', zero_division=0):.3f}")
-col4.metric("F1 Score (macro)", f"{f1_score(y_test, y_pred, average='macro', zero_division=0):.3f}")
+col2.metric(
+    "Precision (macro)",
+    f"{precision_score(y_test, y_pred, average='macro', zero_division=0):.3f}"
+)
+col3.metric(
+    "Recall (macro)",
+    f"{recall_score(y_test, y_pred, average='macro', zero_division=0):.3f}"
+)
+col4.metric(
+    "F1 Score (macro)",
+    f"{f1_score(y_test, y_pred, average='macro', zero_division=0):.3f}"
+)
+
+st.divider()
 
 # --- Confusion Matrix ---
 st.subheader("Confusion Matrix")
@@ -161,6 +182,8 @@ disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=le.classes_)
 disp.plot(ax=ax_cm, colorbar=False)
 plt.tight_layout()
 st.pyplot(fig_cm)
+
+st.divider()
 
 # --- ROC Curve (binary or multi-class OvR) ---
 if hasattr(model, "predict_proba"):
@@ -186,6 +209,8 @@ if hasattr(model, "predict_proba"):
     plt.tight_layout()
     st.pyplot(fig_roc)
 
+st.divider()
+
 # --- Feature Importance (tree-based) ---
 if model_name in ["Decision Tree", "Random Forest"]:
     st.subheader("Feature Importances")
@@ -197,8 +222,9 @@ if model_name in ["Decision Tree", "Random Forest"]:
     ax_fi.set_title("Feature Importances")
     plt.tight_layout()
     st.pyplot(fig_fi)
+    st.divider()
 
-# --- Hyperparameter Tuning Explorer (k sweep for KNN) ---
+# --- Hyperparameter Tuning Explorer ---
 if model_name == "K-Nearest Neighbors":
     st.subheader("Hyperparameter Tuning: k vs Accuracy")
     k_range = range(1, min(31, len(X_train)))
@@ -239,5 +265,5 @@ elif model_name == "Decision Tree":
     plt.tight_layout()
     st.pyplot(fig_d)
 
-st.markdown("---")
+st.divider()
 st.caption("Built with Streamlit + scikit-learn | Portfolio Update 3 | Vedanth Nandivada")
