@@ -8,7 +8,7 @@ This Streamlit app lets users experiment with supervised machine learning intera
 
 The goal was to build something genuinely useful: a tool that makes ML more accessible and that shows the relationship between hyperparameter choices and model behavior in real time.
 
-**Live App:** Link will be updated after deployment to Streamlit Community Cloud.
+**Live App:** [Launch on Streamlit Community Cloud](https://vnandiva-ml-explorer.streamlit.app/)
 
 ## App Features
 
