@@ -61,7 +61,7 @@ I'm a junior at Notre Dame studying Applied Mathematics. I've been interning in 
 
 **Folder:** [`MLStreamlitAPP/`](https://github.com/vnandiva/Nandivada-Data-Science-Portfolio/tree/main/MLStreamlitAPP)
 
-**Live App:** Link will be updated after deployment to Streamlit Community Cloud.
+**Live App:** [Launch on Streamlit Community Cloud](https://vnandiva-ml-explorer.streamlit.app/)
 
 **Overview:** A fully interactive Streamlit app for supervised machine learning. Users can upload their own CSV dataset or choose from three built-in datasets (Iris, Wine, Breast Cancer), select from four classification models, tune hyperparameters via sliders, and immediately see the impact on model performance — including accuracy metrics, confusion matrix, and feature importances.
 
