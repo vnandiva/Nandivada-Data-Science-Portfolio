@@ -66,13 +66,13 @@ I'm a junior at Notre Dame studying Applied Mathematics. I've been interning in 
 **What it demonstrates:**
 - End-to-end ML pipeline in Python: data loading, preprocessing, model training, and evaluation
 - Four supervised models: K-Nearest Neighbors, Decision Tree, Logistic Regression, Random Forest
-- Hyperparameter tuning with real-time feedback — including sweep charts showing accuracy across the full k or depth range
+- Hyperparameter tuning with real-time feedback including sweep charts showing accuracy across the full k or depth range
 - Robust performance evaluation: accuracy, precision, recall, F1, confusion matrix, ROC/AUC
 - Deployment to Streamlit Community Cloud with a public shareable URL
 
 **Key skills:** Python, Streamlit, scikit-learn, Pandas, Matplotlib, Seaborn, model deployment
 
-**How it fits with the overall portfolio:** Projects 1 and 2 built the foundation — interactive data tools and clean data pipelines. Project 3 is where those come together with machine learning. It applies the interactive Python development from Project 1 to an ML context, building something that makes model experimentation genuinely accessible. Together, the three projects show I can take data from raw input to clean format to trained, evaluated, and deployed models.
+**How it fits with the overall portfolio:** Projects 1 and 2 built the foundation, i.e interactive data tools and clean data pipelines. Project 3 is where those come together with machine learning. It applies the interactive Python development from Project 1 to an ML context, building something that makes model experimentation genuinely accessible. Together, the three projects show I can take data from raw input to clean format to trained, evaluated, and deployed models.
 
 ## Repository Structure
 
