@@ -54,6 +54,7 @@ I'm a junior at Notre Dame studying Applied Mathematics. I've been interning in 
 ├── TidyData-Project/        # Tidy data analysis of U.S. Federal R&D budgets
 ├── basic_streamlit_app/     # Interactive Streamlit data explorer
 └── README.md                # This file
+└── .gitignore              # Ignores DS_Store, pycache, etc.
 ```
 
 ---
