@@ -72,6 +72,12 @@ Hyperparameters are exposed via Streamlit sidebar widgets:
 
 Changing any hyperparameter and re-training immediately updates all output metrics and visualizations, making it easy to see the impact of each setting.
 
+## Screenshots
+
+*Screenshots coming soon — the live app is available at [vnandiva-ml-explorer.streamlit.app](https://vnandiva-ml-explorer.streamlit.app/). The app includes an interactive confusion matrix heatmap, feature importance chart, and model performance metric cards.*
+
+---
+
 ## References
 
 - [Streamlit Documentation](https://docs.streamlit.io/)
