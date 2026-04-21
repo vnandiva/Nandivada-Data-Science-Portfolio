@@ -12,6 +12,16 @@ The end goal was to get the data into tidy format (one variable per column, one 
 
 ---
 
+## What It Demonstrates
+
+- Identifying and fixing untidy data structures (wide → long format)
+- Using `melt()`, `str.split()`, and `str.replace()` for data wrangling
+- Aggregation with `groupby()` and `pivot_table()`
+- Creating multi-line and horizontal bar charts with Matplotlib and Seaborn
+- Writing clear markdown explanations alongside code
+
+---
+
 ## What is Tidy Data?
 
 Hadley Wickham's tidy data framework (2014) defines a clean dataset as one where:
@@ -57,11 +67,11 @@ pip install pandas matplotlib seaborn
 git clone https://github.com/vnandiva/Nandivada-Data-Science-Portfolio.git
 cd Nandivada-Data-Science-Portfolio/TidyData-Project
 ```
-
 2. Open the notebook:
 ```bash
 jupyter notebook main.ipynb
 ```
+
 Or open directly in [Google Colab](https://colab.research.google.com/) and run all cells.
 
 ---
@@ -81,9 +91,13 @@ Or open directly in [Google Colab](https://colab.research.google.com/) and run a
 ## Visualizations
 
 ### R&D Spending by Department Over Time
+
+![R&D Spending Over Time by Department](viz1_rd_over_time.png)
+
 Line chart showing how the top 6 departments' budgets changed from 1976–2017. The DOD spike during the Cold War era is pretty obvious, and you can see HHS/NIH grow significantly after 2000.
 
 ### Average Annual R&D Budget by Department
+
 ![Average Annual R&D Budget by Department](viz2_avg_budget_by_dept.png)
 
 Horizontal bar chart comparing average annual budgets across all 14 agencies. DOD is way out in front at ~$64.7B/year on average.
