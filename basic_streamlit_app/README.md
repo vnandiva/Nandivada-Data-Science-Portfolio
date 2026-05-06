@@ -53,9 +53,9 @@ streamlit run main.py
 
 *App UI showing sidebar filters and interactive chart output:*
 
-![Spotify Track Explorer - Sidebar Filters and Dataset Preview](https://raw.githubusercontent.com/vnandiva/Nandivada-Data-Science-Portfolio/main/basic_streamlit_app/screenshot_sidebar.png)
+> **Sidebar UI** — Genre multiselect, popularity slider, danceability/energy/tempo/duration range sliders. Filtering updates  the dataset preview in real-time.
 
-![Spotify Track Explorer - Filtered Results Chart](https://raw.githubusercontent.com/vnandiva/Nandivada-Data-Science-Portfolio/main/basic_streamlit_app/screenshot_chart.png)
+> **Chart Output** — Plotly Express scatter/bar charts render based on filtered results. Track count metric displayed at top. Up to 2,000 filtered tracks shown in sortable table.
 
 *Note: Run locally with `streamlit run main.py` to see the interactive UI.*
 
