@@ -47,7 +47,7 @@ I'm a junior at Notre Dame studying Applied Mathematics. I've been interning in 
 
 **Project 4: Unsupervised Learning Explorer**\
 **Folder:** [`MLUnsupervisedApp/`](https://github.com/vnandiva/Nandivada-Data-Science-Portfolio/tree/main/MLUnsupervisedApp)\
-**Streamlit App URL:** To be added after deployment to Streamlit Community Cloud.\
+**Streamlit App URL:** [Launch App](https://vnandiva-unsupervised-explorer.streamlit.app) — https://vnandiva-unsupervised-explorer.streamlit.app\
 **Overview:** Interactive Streamlit app for unsupervised ML — K-Means, Hierarchical Clustering, PCA, and PCA+K-Means Combined — with elbow plots, dendrograms, silhouette scores, 2D/3D PCA scatter plots, and component loadings heatmaps. Supports CSV upload and built-in sample datasets.\
 **What it demonstrates:** Unsupervised learning pipelines; dimensionality reduction; interactive hyperparameter tuning; clean Streamlit UI design; safe handling of varying dataset sizes.\
 **Key skills:** Python, Streamlit, scikit-learn, scipy, Plotly, Pandas, Matplotlib, Seaborn.
