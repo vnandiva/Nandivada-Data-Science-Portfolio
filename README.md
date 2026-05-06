@@ -24,7 +24,7 @@ I'm a junior at Notre Dame studying Applied Mathematics. I've been interning in 
 
 ---
 
-## Portfolio Projects
+## Portfolio Projects — At a Glance
 
 **Project 1: Streamlit Interactive Data Explorer**\
 **Folder:** [`basic_streamlit_app/`](https://github.com/vnandiva/Nandivada-Data-Science-Portfolio/tree/main/basic_streamlit_app)\
