@@ -74,8 +74,19 @@ Changing any hyperparameter and re-training immediately updates all output metri
 
 ## Screenshots
 
-*Screenshots coming soon — the live app is available at [vnandiva-ml-explorer.streamlit.app](https://vnandiva-ml-explorer.streamlit.app/). The app includes an interactive confusion matrix heatmap, feature importance chart, and model performance metric cards.*
+**Sidebar — Model Selection & Hyperparameter Controls:**
 
+![Model Selection & KNN Hyperparameters](https://vnandiva-ml-explorer.streamlit.app/~/+/media/screenshot_sidebar.png)
+
+*The sidebar lets you choose from K-Nearest Neighbors, Decision Tree, Logistic Regression, and Random Forest, then tune hyperparameters interactively.*
+
+**Confusion Matrix Output:**
+
+![Confusion Matrix Heatmap](https://vnandiva-ml-explorer.streamlit.app/~/+/media/screenshot_confusion.png)
+
+*After training, the app renders a Confusion Matrix heatmap and displays Accuracy, Precision, Recall, and F1 Score.*
+
+**Try the live app here:** [https://vnandiva-ml-explorer.streamlit.app/](https://vnandiva-ml-explorer.streamlit.app/)
 ---
 
 ## References
