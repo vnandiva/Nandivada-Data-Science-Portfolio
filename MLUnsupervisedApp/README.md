@@ -11,7 +11,7 @@
 
 An interactive Streamlit application for exploring unsupervised machine learning algorithms on real and uploaded datasets. Built with a Notre Dame color theme, this app provides intuitive controls for hyperparameter tuning and rich visualizations to support meaningful performance feedback.
 
-**Streamlit App URL:** To be added after deployment to Streamlit Community Cloud.
+**Streamlit App URL:** [Launch App](https://vnandiva-unsupervised-explorer.streamlit.app) — https://vnandiva-unsupervised-explorer.streamlit.app
 
 ---
 
@@ -111,3 +111,26 @@ streamlit run app.py
 ---
 
 *Built as part of the Notre Dame Data Science curriculum (SP26-MDSC-20009-01). All algorithms implemented using scikit-learn, scipy, and Streamlit.*
+
+
+---
+
+## App Screenshots
+
+> *Live app: [https://vnandiva-unsupervised-explorer.streamlit.app](https://vnandiva-unsupervised-explorer.streamlit.app)*
+
+**K-Means Clustering — Elbow Plot & Silhouette Scores**
+
+![K-Means Dashboard](https://vnandiva-unsupervised-explorer.streamlit.app/~/+/media/kmeans.png)
+
+*The K-Means section includes an interactive elbow plot (inertia vs. k), silhouette score chart, and a 2D PCA scatter plot colored by cluster assignment. Users tune the number of clusters via a sidebar slider.*
+
+**Hierarchical Clustering — Dendrogram**
+
+*The hierarchical clustering section renders a truncated dendrogram, computes the cophenetic correlation coefficient, and displays a 2D cluster scatter. Users choose the linkage method (ward, complete, average, single).*
+
+**PCA — Scree Plot & Loadings Heatmap**
+
+*The PCA section displays a scree plot with cumulative variance, 2D/3D scatter plots, and a component loadings heatmap. Optional coloring by true label is available.*
+
+**To see all visualizations live, visit: [https://vnandiva-unsupervised-explorer.streamlit.app](https://vnandiva-unsupervised-explorer.streamlit.app)**
