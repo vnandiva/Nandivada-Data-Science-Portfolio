@@ -45,12 +45,20 @@ I'm a junior at Notre Dame studying Applied Mathematics. I've been interning in 
 **What it demonstrates:** End-to-end ML pipeline; KNN, Decision Tree, Logistic Regression, Random Forest; Hyperparameter tuning; Performance metrics; Deployment.\
 **Key skills:** Python, Streamlit, scikit-learn, Pandas, Matplotlib, Seaborn, model deployment.
 
+**Project 4: Unsupervised Learning Explorer**\
+**Folder:** [`MLUnsupervisedApp/`](https://github.com/vnandiva/Nandivada-Data-Science-Portfolio/tree/main/MLUnsupervisedApp)\
+**Streamlit App URL:** To be added after deployment to Streamlit Community Cloud.\
+**Overview:** Interactive Streamlit app for unsupervised ML — K-Means, Hierarchical Clustering, PCA, and PCA+K-Means Combined — with elbow plots, dendrograms, silhouette scores, 2D/3D PCA scatter plots, and component loadings heatmaps. Supports CSV upload and built-in sample datasets.\
+**What it demonstrates:** Unsupervised learning pipelines; dimensionality reduction; interactive hyperparameter tuning; clean Streamlit UI design; safe handling of varying dataset sizes.\
+**Key skills:** Python, Streamlit, scikit-learn, scipy, Plotly, Pandas, Matplotlib, Seaborn.
+
 ---
 
 ## Repository Structure
 
 ```
 ├── MLStreamlitAPP/          # Interactive ML Explorer
+├── MLUnsupervisedApp/          # Unsupervised ML Explorer (K-Means, Hierarchical, PCA)
 ├── TidyData-Project/        # Tidy data analysis of U.S. Federal R&D budgets
 ├── basic_streamlit_app/     # Interactive Streamlit data explorer
 └── README.md                # This file
