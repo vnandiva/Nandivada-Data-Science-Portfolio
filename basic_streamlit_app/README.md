@@ -37,9 +37,27 @@ Python, Streamlit, Pandas, Plotly Express, interactive UI design
 
 ## How to Run
 
+```bash
+# Step 1
+git clone https://github.com/vnandiva/Nandivada-Data-Science-Portfolio.git
+# Step 2
+cd Nandivada-Data-Science-Portfolio/basic_streamlit_app
+# Step 3
+pip install streamlit pandas plotly
+streamlit run main.py
 ```
-streamlit run basic_streamlit_app/main.py
-```
+
+
+
+## Screenshots
+
+*App UI showing sidebar filters and interactive chart output:*
+
+![Spotify Track Explorer - Sidebar Filters and Dataset Preview](https://raw.githubusercontent.com/vnandiva/Nandivada-Data-Science-Portfolio/main/basic_streamlit_app/screenshot_sidebar.png)
+
+![Spotify Track Explorer - Filtered Results Chart](https://raw.githubusercontent.com/vnandiva/Nandivada-Data-Science-Portfolio/main/basic_streamlit_app/screenshot_chart.png)
+
+*Note: Run locally with `streamlit run main.py` to see the interactive UI.*
 
 ---
 
