@@ -76,17 +76,14 @@ Changing any hyperparameter and re-training immediately updates all output metri
 
 **Sidebar — Model Selection & Hyperparameter Controls:**
 
-![Model Selection & KNN Hyperparameters](https://vnandiva-ml-explorer.streamlit.app/~/+/media/screenshot_sidebar.png)
-
-*The sidebar lets you choose from K-Nearest Neighbors, Decision Tree, Logistic Regression, and Random Forest, then tune hyperparameters interactively.*
+> The sidebar displays dataset selection, feature/target pickers, train/test split slider, model dropdown (KNN, Decision Tree, Logistic Regression, Random Forest), and model-specific hyperparameter sliders. All controls update the output in real time.
 
 **Confusion Matrix Output:**
 
-![Confusion Matrix Heatmap](https://vnandiva-ml-explorer.streamlit.app/~/+/media/screenshot_confusion.png)
-
-*After training, the app renders a Confusion Matrix heatmap and displays Accuracy, Precision, Recall, and F1 Score.*
+> After training, the app renders a Confusion Matrix heatmap alongside Accuracy, Precision, Recall, and F1 Score metric cards. For tree-based models, a Feature Importances bar chart is also shown.
 
 **Try the live app here:** [https://vnandiva-ml-explorer.streamlit.app/](https://vnandiva-ml-explorer.streamlit.app/)
+
 ---
 
 ## References
