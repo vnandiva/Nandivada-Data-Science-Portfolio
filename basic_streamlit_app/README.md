@@ -35,6 +35,16 @@ Python, Streamlit, Pandas, Plotly Express, interactive UI design
 
 ---
 
+## Libraries & Versions
+
+| Library | Version | Purpose |
+|---------|---------|--------|
+| streamlit | >=1.32.0 | Web app framework and UI components |
+| pandas | >=2.0.0 | Data loading, filtering, and manipulation |
+| plotly | >=5.18.0 | Interactive charts and visualizations |
+
+---
+
 ## How to Run
 
 ```bash
@@ -47,17 +57,27 @@ pip install streamlit pandas plotly
 streamlit run main.py
 ```
 
-
+---
 
 ## Screenshots
 
 *App UI showing sidebar filters and interactive chart output:*
 
-> **Sidebar UI** — Genre multiselect, popularity slider, danceability/energy/tempo/duration range sliders. Filtering updates  the dataset preview in real-time.
+> **Sidebar UI** — Genre multiselect, popularity slider, danceability/energy/tempo/duration range sliders. Filtering updates the dataset preview in real-time.
 
 > **Chart Output** — Plotly Express scatter/bar charts render based on filtered results. Track count metric displayed at top. Up to 2,000 filtered tracks shown in sortable table.
 
 *Note: Run locally with `streamlit run main.py` to see the interactive UI.*
+
+---
+
+## References
+
+- [Streamlit Documentation](https://docs.streamlit.io/) — Official Streamlit API reference
+- [Plotly Express Documentation](https://plotly.com/python/plotly-express/) — Interactive chart library
+- [Pandas Documentation](https://pandas.pydata.org/docs/) — Data manipulation library
+- Spotify Tracks Dataset — Sourced from Kaggle (public dataset)
+- SP26-MDSC-20009-01 Course Materials — University of Notre Dame
 
 ---
 
@@ -68,4 +88,4 @@ streamlit run main.py
 
 ---
 
-*Last updated: February 2026*
+*Last updated: May 2026*
